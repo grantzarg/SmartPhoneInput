@@ -13,6 +13,8 @@ export interface PhoneInputProps {
   inputClassName?: string;
   flagClassName?: string;
   enableCountrySelect?: boolean;
+  /** Placeholder text for the phone input */
+  placeholder?: string;
 }
 
 export function PhoneInput({
@@ -23,7 +25,8 @@ export function PhoneInput({
   className,
   inputClassName,
   flagClassName,
-  enableCountrySelect = true
+  enableCountrySelect = true,
+  placeholder
 }: PhoneInputProps) {
   const inputRef = React.useRef<HTMLInputElement>(null);
 
@@ -61,6 +64,7 @@ export function PhoneInput({
             value={formattedValue}
             onChange={handleChange}
             type="tel"
+            placeholder={placeholder}
         />
       </div>
   );

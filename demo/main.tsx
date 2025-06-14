@@ -9,7 +9,12 @@ const App = () => {
     <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
       <div className="max-w-md w-full space-y-6">
         <h1 className="text-2xl font-semibold text-center">📱 Try SmartPhoneInput</h1>
-        <PhoneInput value={value} onChange={setValue} defaultCountry="US" />
+        <PhoneInput
+          value={value}
+          onChange={setValue}
+          defaultCountry="US"
+          placeholder="Enter phone"
+        />
         <p className="text-center text-gray-500 text-sm">Raw value: {value}</p>
       </div>
     </div>

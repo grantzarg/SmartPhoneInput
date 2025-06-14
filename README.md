@@ -12,6 +12,7 @@
 - 🎨 Fully styleable with `className`, `inputClassName`, `flagClassName`
 - ✅ Zero external CSS frameworks
 - 🧩 Usable with or without UI selector via `enableCountrySelect`
+- 📝 Optional placeholder text for the input
 
 ---
 
@@ -51,6 +52,7 @@ function MyForm() {
   className="my-container"
   inputClassName="text-lg"
   flagClassName="rounded"
+  placeholder="Enter phone"
   value={value}
   onChange={setValue}
 />
